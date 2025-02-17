@@ -1,6 +1,6 @@
 body {
-    background-color: #63441e;
-    background-image: url(images/fadedroad50.jpg);
+    background-color: #9e784a;
+    background-image: url(C:\Users\Brash\OneDrive\Desktop\Websites\SaltyBrown.github.io\javajam\images\fadedroad50.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -9,14 +9,17 @@ body {
 }
 
 #wrapper {
-    background-color: #63441e;
+    background-color: #9e784a;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    min-width: 900px;
+	max-width: 1280px;
+	box-shadow: 3px 3px 3px #676767;
 }
 
 header {
-    background-color: #ffcc00;
+    background-color: #ffe88b;
     color: #8C3826;
     text-align: center;
     padding-top: 5px;
@@ -25,6 +28,8 @@ header {
 
 h1 {
     line-height: 200%;
+    font-size: 3em;
+	font-family: sans-serif;
 }
 
 h2 {
@@ -71,13 +76,13 @@ img {
 
 #homehero {
 	height: 300px;
-	background-image: url(images/hero.jpg);
+	background-image: url(C:\Users\Brash\OneDrive\Desktop\Websites\SaltyBrown.github.io\javajam\images\hero.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 footer {
-    background-color: #ffcc00;
+    background-color: #ffe88b;
     font-size: .60em;
     font-style: italic;
     text-align: center;
