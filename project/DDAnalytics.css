@@ -42,13 +42,20 @@ header a:hover {
 
 h1 {
     font-size: 3em;
-	font-family: 'Courier New';
-	text-align: center;
+	font-family: 'Georgia';
+	text-align: left;
 	padding-right: 50px;
+	padding-left: 25px;
 }
 
 h2 {
     color: #ffffff;
+	font-size:xx-large;
+}
+
+p {
+    color: #ffffff;
+	font-size: large;
 }
 
 h3,
