@@ -139,14 +139,77 @@ img {
 	height: auto;
 }
 
+.image-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding: 2rem 0;
+	background-color: #000000;
+  }
+  
+  .image-banner img {
+	width: 400px;
+	height: 300px;
+	object-fit: fill;
+	border-radius: 8px;
+  }
+
+.imageb {
+	flex-shrink: 0;
+  	width: 300px;
+  	height: 300px;
+  	background-size: cover;
+  	background-position: center;
+  	border-radius: 10px;
+  	background-color: #ccc;
+}
+
+.together2.reverse {
+	flex-direction: row-reverse;
+}
+
 .together {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 5rem;
-	padding: 2rem;
+	gap: 2rem;
+	padding: 3rem;
   }
-  
+
+.together2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+	max-width: 1000px;
+	margin: 0 auto;
+  }
+
+  .itemwrapper {
+	display: flex;
+  	align-items: flex-start; 
+  	gap: 20px; 
+  	max-width: 1300px;
+  	margin: 0 auto;
+  }
+
+  .textwrapper {
+	flex: 2;
+  }
+
+  #fourofakind {
+	flex: 1;
+  	height: 700px;
+  	width: 700px;
+	padding-right: 40%;
+  	background-image: url(images/4ofakind.PNG);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center;
+  	border-radius: 8px;
+}
 
 #DDKing {
 	height: 300px;
@@ -170,27 +233,6 @@ img {
     margin-left: 10px;
 }
 
-#heromugs {
-	height: 300px;
-	background-image: url(images/heromugs.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#heroguitar {
-	height: 300px;
-	background-image: url(images/heroguitar.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-#herojobs {
-	height: 300px;
-	background-image: url(images/coffeecup.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
 #mobile {
 	display: inline;
 }
@@ -206,140 +248,4 @@ footer {
     text-align: center;
     padding-bottom: 1em;
 	border-top: 2px solid #ffffff;
-}
-
-table {
-	margin: auto;
-	width: 90%;
-	border-spacing: 0;
-}
-
-th, td {
-	padding: 10px;
-}
-
-tr:nth-of-type(odd) {
-	background-color: #000000;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	padding-left: 1em;
-	width: 80%;
-}
-
-input, textarea {
-	margin-bottom: .5em;
-}
-
-/*@media (min-width: 600px) {
-	header {
-		padding-left: 0;
-		text-align: center;
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	nav ul {
-		flex-flow: row nowrap;
-		justify-content: space-around;
-	}
-
-	nav li {
-		border-bottom: none;
-	}
-
-	#homehero {
-		background-image: url(images/hero.jpg);
-		height: 50vh;
-	}
-
-	#heromugs {
-		background-image: url(images/heromugs.jpg);
-	}
-
-	#heroguitar {
-		background-image: url(images/heroguitar.jpg);
-	}
-
-	#flow {
-		display: flex;
-		flex-direction: row;
-	}
-
-	#mobile {
-		display: none;
-	}
-
-	#desktop {
-		display: inline;
-	}
-
-	.details {
-		display: flex;
-		flex-direction: row;
-	}
-
-	h4 {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-	form {
-		width: 40%;
-		display: grid;
-		grid-gap: 1em;
-		gap: 1em;
-		grid-template-columns: 6em 1fr;
-	}
-
-	input[type="submit"] {
-		grid-column: 2 / 3;
-		width: 9em;
-	}
-
-	#herojobs {
-		background-image: url(images/herojobs.jpg)
-	}
-}
-
-@media (min-width: 1024px) {
-	@supports (display: grid) {
-		header {
-			grid-area: header;
-		}
-
-		nav {
-			grid-area: nav;
-		}
-
-		main {
-			grid-area: main;
-		}
-
-		footer {
-			grid-area: footer;
-		}
-
-		#wrapper {
-			display: grid;
-			grid-template:
-				"header header"
-				"nav    main"
-				"footer footer"
-				/ 200px;
-		}
-
-		nav ul {
-			flex-direction: column;
-		}
-
-		header {
-			background-image: url(images/coffeelogo.jpg);
-		}
-
-	}
 }
